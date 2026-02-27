@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title>
+
+    <!-- This links my new CSS file called STYLES2.CSS -->
+    <link rel="stylesheet" href="STYLES2.CSS">
+</head>
+<body>
+
+    <!-- This container holds my entire game -->
+    <div class="game-container">
+
+        <!-- This is the title of the game -->
+        <h1>🎯 Guess The Number</h1>
+
+        <!-- This explains the range to the player -->
+        <p>I am thinking of a number between <strong>1 and 20</strong></p>
+
+        <!-- This is where the user enters their guess -->
+        <!-- It only allows numbers between 1 and 20 -->
+        <input type="number" id="guessInput" placeholder="Enter your guess" min="1" max="20">
+
+        <!-- This button runs the game logic when clicked -->
+        <button id="guessBtn">Guess</button>
+
+        <!-- This paragraph displays feedback messages -->
+        <p id="message"></p>
+
+    </div>
+
+    <!-- This connects my new JavaScript file called GAMEEXPLAIN.JS -->
+    <!-- It is placed at the bottom so HTML loads first -->
+    <script src="GAMEEXPLAIN.JS"></script>
+
+</body>
+</html>

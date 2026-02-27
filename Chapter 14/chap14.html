@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BMW Car Order</title>
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="chap14.css">
+    
+    <!-- Inline CSS for quick styling tweaks -->
+    <style>
+        fieldset { margin-bottom: 15px; }
+        legend { font-weight: bold; }
+        .disabled { color: gray; font-style: italic; }
+        #modNotice { margin-top: 5px; }
+    </style>
+</head>
+
+<body>
+
+<!-- Main Page Header -->
+<h1>BMW Car Order Form</h1>
+
+<!-- Order Form Container -->
+<div id="orderForm">
+
+    <!-- Number of Cars Input -->
+    <label>How many cars?
+        <input type="number" id="numCars" min="1">
+    </label>
+    <br><br>
+
+    <!-- BMW Model & Year Selection -->
+    <label>Select BMW model & year:
+        <select id="carModel">
+            
+            <!-- Standard BMW Models -->
+            <optgroup label="Standard BMW Models (2024–2026)">
+                <option value="320d_2024">BMW 320d (2024)</option>
+                <option value="320d_2025">BMW 320d (2025)</option>
+                <option value="330i_2026">BMW 330i (2026)</option>
+                <option value="X3_30e_2026">BMW X3 30e (2026)</option>
+            </optgroup>
+
+            <!-- BMW M Models -->
+            <optgroup label="BMW M Models">
+                <option value="M2_2025">BMW M2 (2025)</option>
+                <option value="M3_2026">BMW M3 (2026)</option>
+                <option value="M4_2026">BMW M4 (2026)</option>
+                <option value="M5_2026">BMW M5 (2026)</option>
+            </optgroup>
+
+            <!-- Prototype BMW Cars -->
+            <optgroup label="BMW Prototype Cars">
+                <option value="PROTO_NEUE">BMW Vision Neue Klasse (Prototype)</option>
+                <option value="PROTO_MNEXT">BMW Vision M NEXT (Prototype)</option>
+                <option value="PROTO_DEE">BMW i Vision Dee (Prototype)</option>
+                <option value="PROTO_CIRCULAR">BMW Vision Circular (Prototype)</option>
+                <option value="PROTO_XM">BMW XM Label Red (Prototype)</option>
+            </optgroup>
+
+            <!-- Limited Edition BMW Cars -->
+            <optgroup label="BMW Limited Collection Editions">
+                <option value="LTD_30CSL">BMW 3.0 CSL Hommage</option>
+                <option value="LTD_M4CSL">BMW M4 CSL</option>
+                <option value="LTD_M5CS">BMW M5 CS</option>
+                <option value="LTD_M3GTS">BMW M3 GTS</option>
+                <option value="LTD_M4GTS">BMW M4 GTS</option>
+                <option value="LTD_Z4SB">BMW Z4 Shooting Brake</option>
+                <option value="LTD_I8">BMW i8 Ultimate Sophisto</option>
+                <option value="LTD_M8FE">BMW M8 First Edition</option>
+                <option value="LTD_M760">BMW M760Li Final Edition</option>
+                <option value="LTD_ALPINA">BMW Alpina B8 GT</option>
+            </optgroup>
+        </select>
+    </label>
+    <br><br>
+
+    <!-- Display Engine Type Dynamically -->
+    <p><strong>Engine type:</strong> <span id="engineType">—</span></p>
+
+    <!-- Buyer Type Selection for VAT purposes -->
+    <label>Buyer type:
+        <select id="buyerType">
+            <option value="private">Private Buyer (VAT 15%)</option>
+            <option value="business">Business Buyer (No VAT)</option>
+        </select>
+    </label>
+    <br><br>
+
+    <!-- BMW Color Selection -->
+    <label>Select color:
+        <select id="carColor">
+            <option value="Alpine White">Alpine White</option>
+            <option value="Black Sapphire">Black Sapphire</option>
+            <option value="Mineral Grey">Mineral Grey</option>
+            <option value="Portimao Blue">Portimao Blue</option>
+            <option value="Toronto Red">Toronto Red</option>
+        </select>
+    </label>
+    <br><br>
+
+    <!-- Mods Section -->
+    <fieldset id="modFieldset">
+        <legend>Available Mods</legend>
+
+        <!-- M Performance Mods -->
+        <fieldset>
+            <legend>M Performance Mods</legend>
+            <label><input type="checkbox" class="mod" value="sport"> M Sport Package (R80 000)</label><br>
+            <label><input type="checkbox" class="mod" value="wheels"> Performance Wheels (R45 000)</label>
+        </fieldset>
+
+        <!-- Luxury & Styling Mods -->
+        <fieldset>
+            <legend>Luxury & Styling</legend>
+            <label><input type="checkbox" class="mod" value="exhaust"> Performance Exhaust (R60 000)</label><br>
+            <label><input type="checkbox" class="mod" value="interior"> Luxury Interior (R50 000)</label>
+        </fieldset>
+
+        <!-- Notice for disabled mods (for limited editions) -->
+        <p id="modNotice" class="disabled"></p>
+    </fieldset>
+
+    <br>
+
+    <!-- Place Order Button -->
+    <button type="button" id="placeOrder">Place Order</button>
+</div>
+
+<!-- Display Total Section -->
+<div id="displayTotal"></div>
+
+<!-- Link to external JS -->
+<script src="chap14.js"></script>
+</body>
+</html>

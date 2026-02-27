@@ -1,0 +1,129 @@
+/* ===== BMW Colors (CSS Variables) ===== */
+:root {
+  --bmw-blue: #1c69d4;
+  --bmw-purple: #4b2e83;
+  --bmw-red: #e10600;
+  --gold: #ffd700;
+}
+
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, var(--bmw-blue), var(--bmw-purple), var(--bmw-red));
+  color: white;
+  padding: 30px 20px;
+  line-height: 1.6;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  padding-bottom: 5px;
+}
+
+/* ===== INPUT & BUTTON CONTAINER ===== */
+#bmwInput, #addBtn {
+  padding: 12px 18px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#bmwInput {
+  width: 300px;
+  margin-right: 15px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  padding-left: 15px;
+}
+
+#bmwInput::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+#addBtn {
+  background: linear-gradient(135deg, var(--bmw-blue), var(--bmw-purple));
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+#addBtn:hover {
+  background: linear-gradient(135deg, var(--bmw-purple), var(--bmw-blue));
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* ===== LIST CONTAINERS ===== */
+ul, ol {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+ul:hover, ol:hover {
+  transform: scale(1.02);
+}
+
+/* ===== LIST ITEMS ===== */
+li {
+  margin: 10px 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  background: rgba(255,255,255,0.05);
+}
+
+li:hover {
+  color: var(--gold);
+  background: rgba(255,255,255,0.1);
+  transform: translateX(5px);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 500px) {
+  #bmwInput {
+    width: 200px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  ul, ol {
+    padding: 15px 20px;
+  }
+}

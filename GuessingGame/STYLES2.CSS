@@ -1,0 +1,75 @@
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the game on the screen */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+}
+
+/* Style the main game container */
+.game-container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Style the heading */
+h1 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Style the input box */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 2px solid #4e73df;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+/* Change border color when user clicks input */
+input:focus {
+    border-color: #1cc88a;
+}
+
+/* Style the button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4e73df;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Add hover effect */
+button:hover {
+    background-color: #2e59d9;
+}
+
+/* Style the feedback message */
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Activity of the Day</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Modern Futuristic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <!-- Main Container Layer -->
+    <div class="container">
+        <!-- Header -->
+        <h1>JS Activity of the Day</h1>
+
+        <!-- Date Section with subtle card layer -->
+        <div class="date-container">
+            <p class="today-text">📅 Today is:</p>
+            <div id="todaysdate" class="date-box glass-layer"></div>
+        </div>
+
+        <!-- Button Section -->
+        <div id="buttonBox">
+            <button id="whattodo">🔮 What should I do today?</button>
+        </div>
+
+        <!-- Activity Box with layered glass effect -->
+        <div id="thingToDo" class="activity-box glass-layer">
+            <!-- Optional inner shadow layer -->
+            <div class="inner-shadow"></div>
+        </div>
+    </div>
+</body>
+<script src="calendar.js"></script>
+</html>
