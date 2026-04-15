@@ -32,7 +32,7 @@
             },
             {
                 id: 4,
-                title: 'BMW Web Page',
+                title: 'Fuul Stack BMW Web Page',
                 description: 'An interactive, modern “fill-in-the-blanks” storytelling game with dynamic input highlighting and professional UI.',
                 image: 'images/bmwwebpage.png',
                 tech: ['JavaScript', 'HTML', 'CSS','Python','GITHUB'],
@@ -62,6 +62,8 @@
                 tech: ['JavaScript', 'HTML', 'CSS'],
                 link:"CHAPTER 16/index.html"
             }
+                
+                
         ];
 
         // Skills data
