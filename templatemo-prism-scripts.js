@@ -32,11 +32,11 @@
             },
             {
                 id: 4,
-                title: 'Word Game',
+                title: 'BMW Web Page',
                 description: 'An interactive, modern “fill-in-the-blanks” storytelling game with dynamic input highlighting and professional UI.',
-                image: 'images/wordstory.png',
-                tech: ['JavaScript', 'HTML', 'CSS'],
-                link:"classworkextra/wordGame.html"
+                image: 'images/bmwwebpage.png',
+                tech: ['JavaScript', 'HTML', 'CSS','Python','GITHUB'],
+                link:"https://arnomostertbmwpage.netlify.app/"
             },
             {
                 id: 5,
